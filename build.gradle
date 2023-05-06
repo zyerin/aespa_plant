@@ -1,4 +1,9 @@
 buildscript {
+    repositories {
+        google() //cranberryai
+        mavenCentral() //cranberryai
+    }
+
     dependencies {
         classpath 'com.google.gms:google-services:4.3.14'
     }

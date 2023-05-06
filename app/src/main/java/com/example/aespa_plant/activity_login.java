@@ -17,7 +17,7 @@ public class activity_login extends AppCompatActivity {
 
         sign.setOnClickListener(v->{
             //signup 액티비티 ( 회원가입 페이지로 이동)
-            Intent intent = new Intent(this, Signup.class);
+            Intent intent = new Intent(this, activity_signup.class);
             startActivity(intent);
         });
 
