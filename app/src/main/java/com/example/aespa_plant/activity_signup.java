@@ -43,8 +43,6 @@ public class activity_signup extends AppCompatActivity {
             String password = ((EditText)findViewById(R.id.user_password)).getText().toString();
             String passwordCheck = ((EditText)findViewById(R.id.user_password_check)).getText().toString();
 
-
-
             if(id.length()>0 && password.length()>0 &&passwordCheck.length()>0){
                 if(password.equals(passwordCheck)){
                     mAuth.createUserWithEmailAndPassword(id, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -52,6 +50,8 @@ public class activity_signup extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 Toast.makeText(activity_signup.this, "회원가입에 성공!", Toast.LENGTH_SHORT).show();
+
+
                             } else {
                                 if (task.getException().toString() != null) {
                                     Toast.makeText(activity_signup.this, "회원가입에 실패함", Toast.LENGTH_SHORT).show();

@@ -16,14 +16,21 @@
         android:theme="@style/Theme.Aespa_plant"
         tools:targetApi="31">
         <activity
-            android:name=".activity_signup"
+            android:name=".Act_login"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity_login"
+            android:name=".home_prof"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Act_singup"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -38,6 +45,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity_signup"
+            android:exported="false">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity_login"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
